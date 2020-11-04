@@ -1,5 +1,4 @@
 package com.example.teamproject;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +18,7 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
+public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "SignUpActivity";
 
@@ -98,6 +97,7 @@ class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
                                 }
                             }
                         });
+                //빈칸이 있는지 확인 -> 여기서 비밀번호 양식 확인하면 될듯
             } else if (emailID.isEmpty()) {
                 emailId.setError("Provide your Email first!");
                 emailId.requestFocus();
