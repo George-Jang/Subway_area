@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="300dp"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp"
+
+
+        android:gravity="center"
+
+        android:textColor="#ffffff"
+
+        android:textSize="16dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/purple_700"/>
+
+
+    <TextView
+
+        android:id="@+id/before_station"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="60dp"
+
+        android:layout_marginTop="102dp"
+
+        android:gravity="center"
+
+        android:layout_marginLeft="31dp"
+
+        android:text="       "
+
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+
+        android:textSize="16dp" />
+
+    <TextView
+
+        android:id="@+id/now_station"
+
+        android:layout_width="150dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="60dp"
+
+        android:layout_marginTop="96dp"
+
+        android:layout_marginLeft="75dp"
+
+        android:gravity="center"
+
+        android:text="102"
+
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+
+        android:textSize="25dp" />
+
+
+    <ScrollView
+
+        android:id="@+id/ScrollView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="200dp"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/time_before"
+
+                android:layout_width="80dp"
+
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="18dp"
+
+                android:layout_marginTop="0dp"
+
+                android:layout_marginBottom="60dp"
+
+                android:gravity="center"
+
+                android:text=""
+
+                android:textColor="@color/black"
+
+                android:textSize="16dp" />
+
+            <TextView
+
+                android:id="@+id/time_after"
+
+                android:layout_width="80dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/time_before"
+
+                android:layout_marginLeft="105dp"
+
+                android:layout_marginTop="0dp"
+
+                android:layout_marginBottom="60dp"
+
+                android:gravity="center"
+
+                android:text=""
+
+                android:textColor="@color/black"
+
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+
+        android:id="@+id/after_station"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="60dp"
+
+        android:layout_marginTop="102dp"
+
+        android:gravity="center"
+
+        android:layout_marginLeft="241dp"
+
+        android:text=""
+
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="65dp"
+
+        android:src="@drawable/line1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/line_border"
+        />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="출발 시간"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="191dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="출발 시간"/>
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/btn_cancel_timetable"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+
+
+        android:layout_weight="1"
+
+        android:layout_marginTop="550dp"
+
+        android:background="@color/purple_700"
+
+        android:clickable="true"
+
+        android:gravity="center"
+
+        android:text="확인"
+
+        android:textColor="#ffffff"
+
+        android:textSize="16dp"
+
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:id="@+id/select_line1"
+
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/select_line2"
+        android:scaleType="fitCenter"
+        android:background="@null"
+
+        />
+
+
+</RelativeLayout>

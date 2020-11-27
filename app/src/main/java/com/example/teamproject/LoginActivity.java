@@ -74,7 +74,9 @@ public class LoginActivity extends AppCompatActivity{
                 String userEmail = loginEmailId.getText().toString();
                 String userPaswd = logInpasswd.getText().toString();
 
-                if (userEmail.isEmpty()) {
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+
+                /*if (userEmail.isEmpty()) {
                     loginEmailId.setError("Provide your Email first!");
                     loginEmailId.requestFocus();
                 } else if (userPaswd.isEmpty()) {
@@ -102,7 +104,7 @@ public class LoginActivity extends AppCompatActivity{
                     });
                 } else {
                     Toast.makeText(LoginActivity.this, "Error", Toast.LENGTH_SHORT).show();
-                }
+                }*/
             }
         });
 

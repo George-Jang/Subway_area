@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_subway"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_directions_subway_24"
+        android:title="역 검색"/>
+    <item
+        android:id="@+id/action_Shortest"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="최단거리"/>
+    <item
+        android:id="@+id/action_lost_property"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="분실물 센터"/>
+    <item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="설정"/>
+
+</menu>
